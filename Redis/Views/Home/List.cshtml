@@ -1,0 +1,18 @@
+﻿@{
+    Layout = null;
+}
+@using Redis.Models
+@model List<Redis.Models.User>
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>List</title>
+</head>
+<body>
+@foreach (User item in Model)
+{
+    @item.Name<br/>
+}
+</body>
+</html>
